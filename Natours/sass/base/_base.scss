@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before {
+    /* adding also pseudo elements. because if not, this only applies to real elements.*/
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    /*better practice to do box-sizing*/
+}
+
+html {
+    //this defines what 1 rem is.
+    font-size: 62.5%;
+    /* percentage of 16px (the browser default). Change this for easier responsive design.*/
+}
+
+body {
+    box-sizing: border-box;
+    /*better practice to do box-sizing*/
+}

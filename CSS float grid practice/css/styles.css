@@ -1,0 +1,168 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	padding: 3rem;
+	box-sizing: border-box;
+	font-size: 1.6rem;
+}
+
+.row {
+	background-color:gray;
+	width: 100%;
+}
+
+.row::after{ /* the clearfix. since the col class is floated, use clearfix to prevent the row height to turn 0; */
+	content: "";
+	display:table;
+	clear:both;
+}
+
+.col-1-of-4 {
+	float:left;
+	background-color: #F7F7F7;
+	display:inline-block;
+	border: solid black 0.1rem;
+	width: calc(100%/4);
+}
+
+.col-2-of-4 {
+	float:left;
+	background-color: #F7F7F7;
+	display:inline-block;
+	border: solid black 0.1rem;
+	width: calc(2*(100%/4));
+}
+
+.col-3-of-4 {
+	float:left;
+	background-color: #F7F7F7;
+	display:inline-block;
+	border: solid black 0.1rem;
+	width: calc(3*(100%/4));
+}
+
+.col-4-of-4 {
+	float:left;
+	background-color: #F7F7F7;
+	display:inline-block;
+	border: solid black 0.1rem;
+	width: calc(4*(100%/4));
+}
+
+.col-1-of-12 {
+	float:left;
+	background-color: #F7F7F7;
+	display:inline-block;
+	border: solid black 0.1rem;
+	width: calc((100%/12));
+}
+
+.col-2-of-12 {
+	float:left;
+	background-color: #F7F7F7;
+	display:inline-block;
+	border: solid black 0.1rem;
+	width: calc(2*(100%/12));
+}
+
+.col-3-of-12 {
+	float:left;
+	background-color: #F7F7F7;
+	display:inline-block;
+	border: solid black 0.1rem;
+	width: calc(3*(100%/12));
+}
+
+.col-4-of-12 {
+	float:left;
+	background-color: #F7F7F7;
+	display:inline-block;
+	border: solid black 0.1rem;
+	width: calc(4*(100%/12));
+}
+
+.col-5-of-12 {
+	float:left;
+	background-color: #F7F7F7;
+	display:inline-block;
+	border: solid black 0.1rem;
+	width: calc(5*(100%/12));
+}
+
+.col-5-of-12 {
+	float:left;
+	background-color: #F7F7F7;
+	display:inline-block;
+	border: solid black 0.1rem;
+	width: calc(5*(100%/12));
+}
+
+.col-6-of-12 {
+	float:left;
+	background-color: #F7F7F7;
+	display:inline-block;
+	border: solid black 0.1rem;
+	width: calc(6*(100%/12));
+}
+
+.col-7-of-12 {
+	float:left;
+	background-color: #F7F7F7;
+	display:inline-block;
+	border: solid black 0.1rem;
+	width: calc(7*(100%/12));
+}
+
+.col-8-of-12 {
+	float:left;
+	background-color: #F7F7F7;
+	display:inline-block;
+	border: solid black 0.1rem;
+	width: calc(8*(100%/12));
+}
+
+.col-9-of-12 {
+	float:left;
+	background-color: #F7F7F7;
+	display:inline-block;
+	border: solid black 0.1rem;
+	width: calc(9*(100%/12));
+}
+
+.col-10-of-12 {
+	float:left;
+	background-color: #F7F7F7;
+	display:inline-block;
+	border: solid black 0.1rem;
+	width: calc(10*(100%/12));
+}
+
+.col-11-of-12 {
+	float:left;
+	background-color: #F7F7F7;
+	display:inline-block;
+	border: solid black 0.1rem;
+	width: calc(11*(100%/12));
+}
+
+.col-12-of-12 {
+	float:left;
+	background-color: #F7F7F7;
+	display:inline-block;
+	border: solid black 0.1rem;
+	width: calc(12*(100%/12));
+}
+
+.text-center{
+	text-align:center;
+}
+
+

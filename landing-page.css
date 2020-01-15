@@ -4,9 +4,7 @@ color-primary :#3f72af
 color-primary-dark : #112d4e
 color-pimary-light : #dbe2ef
 color-pimary-lighter : #f9f7f7
-
 color-text : #4d4646
-
 */
 
 * {
@@ -17,6 +15,14 @@ color-text : #4d4646
 
 html {
     font-size: 62.5%;
+}
+
+@media (max-width: 1366px) { /* common laptop screen width */
+	
+	html{
+		font-size: 50%;
+	}
+	
 }
 
 body {
@@ -115,11 +121,10 @@ body {
     text-decoration: none;
     border: solid #112d4e .1rem;
     border-radius: .5rem;
-    padding: .8rem 8rem;
+	width: 50%;
 }
 
 .btn:hover {
     color: #ffffff;
     background-color: #112d4e;
 }
-

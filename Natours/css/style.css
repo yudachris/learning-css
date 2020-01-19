@@ -87,10 +87,26 @@ body {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
+.heading-tertiary {
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 8rem; }
+
 .u-center-text {
   text-align: center; }
 
+.u-margin-bottom-sm {
+  margin-bottom: 1.5rem; }
+
 .u-margin-bottom-md {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-lg {
   margin-bottom: 8rem; }
 
 .btn:link, .btn:visited {
@@ -138,6 +154,26 @@ body {
   /* animation name, animation duration, animation timing function, animation delay */
   animation-fill-mode: backwards;
   /* to apply the 0% styles despite of the animation duration */ }
+
+.btn-text:link, .btn-text:visited {
+  color: #55c57a;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
+  font-size: 1.6rem;
+  transition: all .2s;
+  border-radius: .2rem; }
+
+.btn-text:hover {
+  background-color: #55c57a;
+  color: #FFF;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-0.2rem); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
 
 .header {
   height: 95vh;

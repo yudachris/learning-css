@@ -8,6 +8,7 @@
     background-position: top;
     position: relative;
 
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); //(the height is 95vh, but it was clipped at 75vh) this is why the section-about is having a -20vh margin top. 
 
     &__logo-box {

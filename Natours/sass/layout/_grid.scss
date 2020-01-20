@@ -1,6 +1,6 @@
 .row {
     //standard nowawdays is to use 1140px. in this case we will use rem. when 1 rem = 10px;
-    max-width: 114rem;
+    max-width: $grid-width;
     margin: 0 auto;
 
     &:not(:last-child) {

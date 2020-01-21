@@ -1,0 +1,65 @@
+.story {
+    width: 75%;
+    margin: 0 auto;//to center an element with a width
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    background-color: rgba($color-white, .6);
+    border-radius: 3px;
+    padding: 6rem;
+    padding-left: 9rem; //base padding of 6rem, added by the part where it translated -3rem to compensate.
+    font-size: $font-size-default;
+    transform: skewX(-12deg);
+    //we don't use direct child selector (& > *) here since there is already a transform happening in the story__shape class. so we define it one by one instead. 
+
+    &__shape {
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%); //the number inside the circle function will define the radius of the circle. for percentages, it will refer to the width and height of the element.
+        //for example here, the width is 15rem, so 50% wil, be 7.5rem. THE ELEMENT MUST BE FLOATED
+        //the first number is the radius, the ones after "at" will defines where the center is. for this case, its 50% 50%, which is the center of the element.
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+
+        //to give space to a floated element, we better use transform and translate the element rather than using margin.
+        transform: translateX(-3rem) skewX(12deg);
+        position: relative;
+    }
+
+    &__image {
+        height:100%;
+        transform: translateX(-4rem) scale(1.4); //centering the images to match the transform in the shape.
+        backface-visibility: hidden;
+        transition: all .3s;
+    }
+
+    &__text {
+        transform: skewX(12deg);
+    }
+    
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        text-align: center;
+        backface-visibility: hidden;
+        opacity: 0;
+        transition: all .3s;
+    }
+
+    &:hover &__caption{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    &:hover &__image {
+        transform: translateX(-4rem) scale(1);
+        filter: blur(3px) brightness(80%);
+    }
+
+
+}

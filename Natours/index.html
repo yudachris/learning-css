@@ -230,6 +230,14 @@
         </section>
 
         <section class="section-stories">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop> <!-- instead of using src, we use the inner html just like the following -->
+                    <source src="img/video.mp4" type="video/mp4">
+                    <source src="img/video.webm" type="video/webm">
+                    Your browser is not supported! <!-- if the video cannot be played, it shows the text-->
+                </video>
+            </div>
+
             <div class="u-center-text u-margin-bottom-lg">
                 <h2 class="heading-secondary">
                     We make people genuinely happy
@@ -238,8 +246,46 @@
 
             <div class="row">
                 <div class="story">
-                    TEXT
+                    <figure class="story__shape"> <!-- figure element is the best semantic element where we put image and caption-->
+                        <img src="img/nat-8.jpg" alt="Person on a tour" class="story__image">
+                        <figcaption class="story__caption">
+                            Charlotte Lawrence
+                        </figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-sm">I had the best week ever with my family</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ducimus nemo facere laborum
+                            hic eum voluptatum modi recusandae reprehenderit cupiditate esse perferendis, aut similique
+                            mollitia dicta dolorum ratione iste quaerat. Fuga ducimus nemo facere laborum
+                            hic eum voluptatum modi recusandae.
+                        </p>
+                    </div>
                 </div>
+            </div>
+
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape"> <!-- figure element is the best semantic element where we put image and caption-->
+                        <img src="img/nat-9.jpg" alt="Person on a tour" class="story__image">
+                        <figcaption class="story__caption">
+                            Jake Baldino
+                        </figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-sm">wow! my life is completely different now</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ducimus nemo facere laborum
+                            hic eum voluptatum modi recusandae reprehenderit cupiditate esse perferendis, aut similique
+                            mollitia dicta dolorum ratione iste quaerat. Fuga ducimus nemo facere laborum
+                            hic eum voluptatum modi recusandae.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="u-center-text u-margin-top-xl">
+                <a href="#" class="btn-text">Read all stories &rarr;</a>
             </div>
         </section>
     </main>

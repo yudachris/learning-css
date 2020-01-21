@@ -109,6 +109,21 @@ body {
 .u-margin-bottom-lg {
   margin-bottom: 8rem; }
 
+.u-margin-bottom-xl {
+  margin-bottom: 10rem; }
+
+.u-margin-top-sm {
+  margin-top: 1.5rem; }
+
+.u-margin-top-md {
+  margin-top: 4rem; }
+
+.u-margin-top-lg {
+  margin-top: 8rem; }
+
+.u-margin-top-xl {
+  margin-top: 10rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -136,6 +151,12 @@ body {
   color: #777; }
   .btn--white::after {
     background-color: #FFF; }
+
+.btn--green {
+  background-color: #55c57a;
+  color: #FFF; }
+  .btn--green::after {
+    background-color: #55c57a; }
 
 .btn::after {
   content: "";
@@ -294,6 +315,22 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    color: #FFF;
+    margin-bottom: 8rem; }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
 
 .header {
   height: 95vh;
@@ -358,5 +395,9 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -11rem; }
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: #f7f7f7; }

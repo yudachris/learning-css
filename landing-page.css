@@ -151,6 +151,27 @@ body {
 	
 }
 
+@media (max-width: 850px) { /* common smartphone screen width (iphones : 360 - 414px, samsung galaxies: 360 - 412px) */
+	
+	html{
+		font-size: 40%;
+    }
+    
+    .col {
+        width: calc(100% / 2 );
+    }
+
+    .col:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .card {
+        width: 85%;
+        margin: 0 auto 3rem;
+    }
+	
+}
+
 @media (max-width: 420px) { /* common smartphone screen width (iphones : 360 - 414px, samsung galaxies: 360 - 412px) */
 	
 	html{
@@ -160,6 +181,10 @@ body {
     .col {
         width: 100%;
         float: left;
+    }
+
+    .col:not(:last-child) {
+        margin-right: 0;
     }
 
     .card {

@@ -151,7 +151,7 @@ body {
 	
 }
 
-@media (max-width: 375px) { /* common smartphone screen width */
+@media (max-width: 420px) { /* common smartphone screen width (iphones : 360 - 414px, samsung galaxies: 360 - 412px) */
 	
 	html{
 		font-size: 40%;

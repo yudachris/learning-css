@@ -1,1 +1,6 @@
-# advanced-css-course
+# Natours
+
+Natours is a project created by Jonas Schmedtmann in his advanced css course on Udemy.
+In this course, I will learn (and probably have learned by the time you read this) about things related to advanced techniques used for making animation, visual effects, popups, interactive forms, in pure CSS.
+While yes, I basically just code the same thing that he made, I tried to understand every concept and techniques that he uses in this course. Only and IF only I fully understands the concept and the why (use this on this, use that on that), then I code.
+Anyway, thank you for visiting!

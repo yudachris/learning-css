@@ -27,7 +27,7 @@
                 <span class="heading-primary--sub">is where life happens</span>
             </h1>
 
-            <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+            <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
             <!-- btn is a standalone block, white and animated are modifiers-->
         </div>
 
@@ -118,7 +118,7 @@
             </div>
         </section>
 
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-lg">
                 <h2 class="heading-secondary">
                     most popular tours
@@ -153,7 +153,7 @@
                                     <div class="card__price-only">Only</div>
                                     <div class="card__price-value">$297</div>
                                 </div>
-                                <a href="#" class="btn btn--white">book now!</a>
+                                <a href="#popup" class="btn btn--white">book now!</a>
                             </div>
                         </div>
                     </div>
@@ -185,7 +185,7 @@
                                     <div class="card__price-only">Only</div>
                                     <div class="card__price-value">$497</div>
                                 </div>
-                                <a href="#" class="btn btn--white">book now!</a>
+                                <a href="#popup" class="btn btn--white">book now!</a>
                             </div>
                         </div>
                     </div>
@@ -217,7 +217,7 @@
                                     <div class="card__price-only">Only</div>
                                     <div class="card__price-value">$897</div>
                                 </div>
-                                <a href="#" class="btn btn--white">book now!</a>
+                                <a href="#popup" class="btn btn--white">book now!</a>
                             </div>
                         </div>
                     </div>
@@ -225,16 +225,18 @@
             </div>
 
             <div class="u-center-text u-margin-top-xl">
-                <a href="#" class="btn btn--green">Discover all tours</a>
+                <a href="#section-tours" class="btn btn--green">Discover all tours</a>
             </div>
         </section>
 
         <section class="section-stories">
             <div class="bg-video">
-                <video class="bg-video__content" autoplay muted loop> <!-- instead of using src, we use the inner html just like the following -->
+                <video class="bg-video__content" autoplay muted loop>
+                    <!-- instead of using src, we use the inner html just like the following -->
                     <source src="img/video.mp4" type="video/mp4">
                     <source src="img/video.webm" type="video/webm">
-                    Your browser is not supported! <!-- if the video cannot be played, it shows the text-->
+                    Your browser is not supported!
+                    <!-- if the video cannot be played, it shows the text-->
                 </video>
             </div>
 
@@ -246,7 +248,8 @@
 
             <div class="row">
                 <div class="story">
-                    <figure class="story__shape"> <!-- figure element is the best semantic element where we put image and caption-->
+                    <figure class="story__shape">
+                        <!-- figure element is the best semantic element where we put image and caption-->
                         <img src="img/nat-8.jpg" alt="Person on a tour" class="story__image">
                         <figcaption class="story__caption">
                             Charlotte Lawrence
@@ -266,7 +269,8 @@
 
             <div class="row">
                 <div class="story">
-                    <figure class="story__shape"> <!-- figure element is the best semantic element where we put image and caption-->
+                    <figure class="story__shape">
+                        <!-- figure element is the best semantic element where we put image and caption-->
                         <img src="img/nat-9.jpg" alt="Person on a tour" class="story__image">
                         <figcaption class="story__caption">
                             Jake Baldino
@@ -289,6 +293,37 @@
             </div>
         </section>
     </main>
+
+    <footer>
+
+
+    </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/nat-8.jpg" alt="Tour photo" class="popup__image">
+                <img src="img/nat-9.jpg" alt="Tour photo" class="popup__image">
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-md">start booking now</h2>
+                <h3 class="heading-tertiary u-margin-bottom-sm">Important &ndash; Please read these terms before booking
+                </h3>
+                <p class="popup__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Risus pretium quam vulputate dignissim suspendisse in est. Phasellus
+                    vestibulum lorem sed risus. Ac turpis egestas integer eget aliquet nibh praesent tristique.
+                    Dictum varius duis at consectetur lorem donec massa sapien faucibus. Massa enim nec dui nunc mattis
+                    enim. Pulvinar sapien et ligula ullamcorper malesuada proin libero. Fusce ut placerat orci nulla
+                    pellentesque dignissim enim sit amet. Nibh cras pulvinar mattis nunc sed blandit libero volutpat.
+                    Habitasse platea dictumst vestibulum rhoncus est. Libero nunc consequat interdum varius sit amet
+                    mattis.
+                </p>
+                <a href="#" class="btn btn--green">Book now</a>
+            </div>
+        </div>
+    </div>
     <!--
     <section class="grid-test">
         <div class="row">
